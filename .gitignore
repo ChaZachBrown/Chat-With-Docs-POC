@@ -1,0 +1,7 @@
+.idea/ChatWithDocsPOC.iml
+.idea/dbnavigator.xml
+.idea/misc.xml
+.idea/modules.xml
+.idea/inspectionProfiles/profiles_settings.xml
+chains/__pycache__/hugginface_llm_chain.cpython-311.pyc
+chains/__pycache__/openai_lm_chain.cpython-311.pyc
