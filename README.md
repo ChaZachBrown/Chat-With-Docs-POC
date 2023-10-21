@@ -8,7 +8,7 @@ This chatbot is designed to assist users in finding specific information within 
 
 ### Disclaimer
 
-This repository contains code developed primarily for educational purposes and personal skill development. While the projects showcase the capabilities and potential applications of Large Language Models (LLMs), they are not intended for production use. The code is provided "as-is" and serves as a proof-of-concept to deepen my understanding of LLMs and their associated technologies. Please exercise caution and discretion if choosing to adapt any of this code for other uses.
+This repository contains code developed primarily for educational purposes and personal skill development. While the projects showcase the capabilities and potential applications of Large Language Models (LLMs), it is not intended for production use. The code is provided "as-is" and serves as a proof-of-concept to deepen my understanding of LLMs and their associated technologies. Please exercise caution and discretion if choosing to adapt any of this code for other uses.
 
 ---
 
@@ -18,6 +18,32 @@ This repository contains code developed primarily for educational purposes and p
 - Real-time automated support
 - Direct users to specific documentation or metrics
 - Provide the exact location in documents where information is found
+
+---
+
+## Architecture
+
+This project incorporates a variety of technologies and methodologies to create an effective and efficient chatbot. Below are some architectural choices and their respective roles in the application:
+
+### Cloud Deployment
+
+- **Open Source Models**: The application leverages open-source language models hosted in the cloud to provide efficient and accurate responses.
+
+### Local Systems
+
+- **Chroma Vector Databases**: These are run locally with persistent storage to manage and retrieve information quickly and effectively.
+  
+- **Embedding Models**: Run locally, these models are employed to store and retrieve relevant data.
+
+### Language Models and Retrieval
+
+- **Langchain ConversationalRetrievalChain**: Used for answering user questions by searching through the database and available documentation.
+  
+- **Langchain ConversationTokenBufferMemory**: Responsible for storing chat history, enhancing the chatbot's context awareness and thereby the quality of its responses.
+
+### User Interface
+
+- **Streamlit**: Utilized for rapid development of a chat UI, enabling easy testing and iterative improvement of the system.
 
 ---
 
